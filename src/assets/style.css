@@ -1,0 +1,89 @@
+:root {
+  --fuente: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --fondo: radial-gradient(circle, rgba(242,240,236,1) 0%, rgba(236,226,198,1) 100%);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--fuente);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--fondo);
+}
+
+.imagen {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/public/img-fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fondo {
+  background: var(--fondo);
+  width: 67%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--fuente);
+}
+
+button {
+  border-radius: 5px;
+  border: 3px solid rgb(152, 146, 146);
+  padding: 0.6em 1.2em;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: rgb(183, 176, 176);
+  cursor: pointer;
+  transition: border-color 0.3s;
+  margin-top: 8px;
+}
+
+button:hover {
+  border-color: rgb(36, 238, 36);
+  font-weight: bold;
+  box-shadow: 3px 3px;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 0; /* Elimina la sangría */
+}
+
+li {
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+label {
+  color: cadetblue;
+}
+
+input {
+  cursor: pointer;
+}
+
+.tareas {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+}
